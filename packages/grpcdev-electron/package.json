@@ -1,0 +1,23 @@
+{
+  "name": "grpcdev-electron",
+  "version": "0.0.1",
+  "description": "GRPC UI Electron",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && electron .",
+    "dev": "npm run build && concurrently \"tsc -w\" \"electron .\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/jamillosantos/grpcdev"
+  },
+  "author": "Jota Santos <jamillo@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/electron": "^1.6.10",
+    "concurrently": "^7.4.0",
+    "electron": "^20.1.3"
+  }
+}
